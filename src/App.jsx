@@ -1,8 +1,8 @@
 import "./index.css";
 import logo from "./logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "../node_modules/@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "../node_modules/@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
