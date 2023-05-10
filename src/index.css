@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    335deg,
+    hsl(215deg 76% 11%) 0%,
+    hsl(209deg 83% 23%) 42%,
+    hsl(201deg 90% 38%) 67%,
+    hsl(197deg 83% 57%) 86%,
+    hsl(202deg 55% 84%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+
+#content-container {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  padding: 40px 20px 80px 20px;
+  border-radius: 15px;
+  row-gap: 10px;
+  position: relative;
+  top: -40px;
+}
+
+#logo-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 50% 50%;
+  animation: load 2s ease 1;
+}
+
+#logo {
+  width: 300px;
+}
+
+#text {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  position: relative;
+  top: -15px;
+}
+
+#socials-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  row-gap: 25px;
+  position: relative;
+  top: -40px;
+  animation: loadSocials 2s ease 1;
+}
+
+#socials-text {
+  grid-column: 1 / span 2;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation-delay: 1s;
+}
+
+#instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  position: relative;
+  left: 15px;
+}
+
+#facebook {
+  background: #3b5998;
+  position: relative;
+  left: -15px;
+}
+
+a {
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 420px) {
+  #logo {
+    width: 250px;
+  }
+
+  #text {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes loadSocials {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
