@@ -23,7 +23,11 @@ function App() {
               className="icon"
             />
           </a>
-          <a href="fb://page/BokstavMari" target="_blank">
+          <a
+            href="https://www.facebook.com/BokstavMari"
+            target="_blank"
+            rel="noopener"
+            onclick="window.location = 'fb://page/183155461381187'; return false;">
             <FontAwesomeIcon
               icon={faFacebookF}
               id="facebook"
