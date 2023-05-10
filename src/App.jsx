@@ -16,18 +16,14 @@ function App() {
           <p id="socials-text">
             I mellomtiden kan du følge oss på sosiale medier
           </p>
-          <a
-            href="vnd.instagram:https://www.instagram.com/bokstavmari/"
-            target="_blank">
+          <a href="https://www.instagram.com/bokstavmari/" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               id="instagram"
               className="icon"
             />
           </a>
-          <a
-            href="vnd.facebook:https://www.facebook.com/BokstavMari"
-            target="_blank">
+          <a href="fb://page/BokstavMari" target="_blank">
             <FontAwesomeIcon
               icon={faFacebookF}
               id="facebook"
