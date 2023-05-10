@@ -9,9 +9,9 @@ body {
   align-items: center;
   background-image: linear-gradient(
     335deg,
-    hsl(215deg 76% 11%) 0%,
+    hsl(0, 97%, 50%) 0%,
     hsl(209deg 83% 23%) 42%,
-    hsl(201deg 90% 38%) 67%,
+    hsl(0, 0%, 0%) 67%,
     hsl(197deg 83% 57%) 86%,
     hsl(202deg 55% 84%) 100%
   );
